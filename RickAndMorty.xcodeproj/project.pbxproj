@@ -29,6 +29,15 @@
 		56FA412E2BC82DBE00B2CF24 /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA412A2BC82DBE00B2CF24 /* RMEndpoint.swift */; };
 		56FA412F2BC82DBE00B2CF24 /* RMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA412B2BC82DBE00B2CF24 /* RMRequest.swift */; };
 		56FA41302BC82DBE00B2CF24 /* RMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA412C2BC82DBE00B2CF24 /* RMService.swift */; };
+		56FA41332BC82E3A00B2CF24 /* RMCharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA41322BC82E3A00B2CF24 /* RMCharacterList.swift */; };
+		56FA41362BC82EA400B2CF24 /* RMCharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA41352BC82EA400B2CF24 /* RMCharacterListViewModel.swift */; };
+		56FA41392BC82F7200B2CF24 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 56FA41382BC82F7200B2CF24 /* SnapKit */; };
+		56FA413B2BC82F7200B2CF24 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 56FA413A2BC82F7200B2CF24 /* SnapKit-Dynamic */; };
+		56FA413E2BC8356200B2CF24 /* RMCharacterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA413D2BC8356200B2CF24 /* RMCharacterListCell.swift */; };
+		56FA41412BC83A3A00B2CF24 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA41402BC83A3A00B2CF24 /* UIView+Extension.swift */; };
+		56FA41432BC83A4800B2CF24 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA41422BC83A4800B2CF24 /* UIViewController+Extension.swift */; };
+		56FA41462BC83CCB00B2CF24 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 56FA41452BC83CCB00B2CF24 /* Kingfisher */; };
+		56FA414C2BC847DF00B2CF24 /* RMCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA414B2BC847DF00B2CF24 /* RMCharacterDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +65,12 @@
 		56FA412A2BC82DBE00B2CF24 /* RMEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMEndpoint.swift; sourceTree = "<group>"; };
 		56FA412B2BC82DBE00B2CF24 /* RMRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMRequest.swift; sourceTree = "<group>"; };
 		56FA412C2BC82DBE00B2CF24 /* RMService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMService.swift; sourceTree = "<group>"; };
+		56FA41322BC82E3A00B2CF24 /* RMCharacterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterList.swift; sourceTree = "<group>"; };
+		56FA41352BC82EA400B2CF24 /* RMCharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterListViewModel.swift; sourceTree = "<group>"; };
+		56FA413D2BC8356200B2CF24 /* RMCharacterListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterListCell.swift; sourceTree = "<group>"; };
+		56FA41402BC83A3A00B2CF24 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		56FA41422BC83A4800B2CF24 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		56FA414B2BC847DF00B2CF24 /* RMCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56FA41462BC83CCB00B2CF24 /* Kingfisher in Frameworks */,
+				56FA41392BC82F7200B2CF24 /* SnapKit in Frameworks */,
+				56FA413B2BC82F7200B2CF24 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +106,8 @@
 		56FA40EF2BC828EF00B2CF24 /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				56FA41472BC8405D00B2CF24 /* Manager */,
+				56FA413F2BC83A2400B2CF24 /* Extension */,
 				56FA412D2BC82DBE00B2CF24 /* APIClient */,
 				56FA41132BC82D1C00B2CF24 /* Model */,
 				56FA41052BC8292F00B2CF24 /* Scene */,
@@ -111,6 +131,7 @@
 		56FA41052BC8292F00B2CF24 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				56FA414A2BC847CC00B2CF24 /* RMCharacterDetail */,
 				56FA41072BC82ACC00B2CF24 /* RMCharacter */,
 				56FA410D2BC82B3300B2CF24 /* RMEpisode */,
 				56FA410A2BC82B0700B2CF24 /* RMLocation */,
@@ -131,6 +152,9 @@
 		56FA41072BC82ACC00B2CF24 /* RMCharacter */ = {
 			isa = PBXGroup;
 			children = (
+				56FA413C2BC8354C00B2CF24 /* Cell */,
+				56FA41342BC82E9100B2CF24 /* ViewModel */,
+				56FA41312BC82E1900B2CF24 /* View */,
 				56FA41082BC82AD800B2CF24 /* RMCharacterViewController.swift */,
 			);
 			path = RMCharacter;
@@ -203,6 +227,54 @@
 			path = APIClient;
 			sourceTree = "<group>";
 		};
+		56FA41312BC82E1900B2CF24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56FA41322BC82E3A00B2CF24 /* RMCharacterList.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56FA41342BC82E9100B2CF24 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				56FA41352BC82EA400B2CF24 /* RMCharacterListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		56FA413C2BC8354C00B2CF24 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				56FA413D2BC8356200B2CF24 /* RMCharacterListCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		56FA413F2BC83A2400B2CF24 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				56FA41402BC83A3A00B2CF24 /* UIView+Extension.swift */,
+				56FA41422BC83A4800B2CF24 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		56FA41472BC8405D00B2CF24 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		56FA414A2BC847CC00B2CF24 /* RMCharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				56FA414B2BC847DF00B2CF24 /* RMCharacterDetailViewController.swift */,
+			);
+			path = RMCharacterDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,6 +291,11 @@
 			dependencies = (
 			);
 			name = RickAndMorty;
+			packageProductDependencies = (
+				56FA41382BC82F7200B2CF24 /* SnapKit */,
+				56FA413A2BC82F7200B2CF24 /* SnapKit-Dynamic */,
+				56FA41452BC83CCB00B2CF24 /* Kingfisher */,
+			);
 			productName = RickAndMorty;
 			productReference = 56FA40ED2BC828EF00B2CF24 /* RickAndMorty.app */;
 			productType = "com.apple.product-type.application";
@@ -247,6 +324,10 @@
 				Base,
 			);
 			mainGroup = 56FA40E42BC828EF00B2CF24;
+			packageReferences = (
+				56FA41372BC82F7200B2CF24 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				56FA41442BC83CCB00B2CF24 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 56FA40EE2BC828EF00B2CF24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,14 +361,20 @@
 				56FA41092BC82AD800B2CF24 /* RMCharacterViewController.swift in Sources */,
 				56FA412F2BC82DBE00B2CF24 /* RMRequest.swift in Sources */,
 				56FA410F2BC82B3B00B2CF24 /* RMEpisodeViewController.swift in Sources */,
+				56FA41362BC82EA400B2CF24 /* RMCharacterListViewModel.swift in Sources */,
 				56FA41182BC82D4E00B2CF24 /* RMGetAllCharactersResponse.swift in Sources */,
+				56FA413E2BC8356200B2CF24 /* RMCharacterListCell.swift in Sources */,
 				56FA40F12BC828EF00B2CF24 /* AppDelegate.swift in Sources */,
 				56FA41272BC82D5900B2CF24 /* RMLocation.swift in Sources */,
+				56FA41332BC82E3A00B2CF24 /* RMCharacterList.swift in Sources */,
+				56FA41432BC83A4800B2CF24 /* UIViewController+Extension.swift in Sources */,
 				56FA41302BC82DBE00B2CF24 /* RMService.swift in Sources */,
 				56FA41192BC82D4E00B2CF24 /* RMGetAllEpisodesResponse.swift in Sources */,
 				56FA41122BC82B6C00B2CF24 /* RMSettings.swift in Sources */,
 				56FA41252BC82D5900B2CF24 /* RMCharacterStatus.swift in Sources */,
 				56FA41292BC82D5900B2CF24 /* RMSingleLocation.swift in Sources */,
+				56FA41412BC83A3A00B2CF24 /* UIView+Extension.swift in Sources */,
+				56FA414C2BC847DF00B2CF24 /* RMCharacterDetailViewController.swift in Sources */,
 				56FA40F32BC828EF00B2CF24 /* SceneDelegate.swift in Sources */,
 				56FA411A2BC82D4E00B2CF24 /* RMGetAllLocationsResponse.swift in Sources */,
 				56FA412E2BC82DBE00B2CF24 /* RMEndpoint.swift in Sources */,
@@ -515,6 +602,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56FA41372BC82F7200B2CF24 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		56FA41442BC83CCB00B2CF24 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56FA41382BC82F7200B2CF24 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56FA41372BC82F7200B2CF24 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		56FA413A2BC82F7200B2CF24 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56FA41372BC82F7200B2CF24 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		56FA41452BC83CCB00B2CF24 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56FA41442BC83CCB00B2CF24 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56FA40E52BC828EF00B2CF24 /* Project object */;
 }

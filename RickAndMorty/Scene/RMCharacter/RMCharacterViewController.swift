@@ -40,6 +40,7 @@ final class RMCharacterViewController: UIViewController {
 extension RMCharacterViewController: RMCharacterListDelegate {
     func didSelectCharacterItem(character: RMCharacter) {
         let vc = RMCharacterDetailViewController()
+        vc.set(character: character)
         vc.navigationItem.largeTitleDisplayMode = .never
         vc.title = character.name
         navigationController?.pushViewController(vc, animated: true)

@@ -38,6 +38,7 @@
 		56FA41432BC83A4800B2CF24 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA41422BC83A4800B2CF24 /* UIViewController+Extension.swift */; };
 		56FA41462BC83CCB00B2CF24 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 56FA41452BC83CCB00B2CF24 /* Kingfisher */; };
 		56FA414C2BC847DF00B2CF24 /* RMCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA414B2BC847DF00B2CF24 /* RMCharacterDetailViewController.swift */; };
+		56FA414F2BC848E300B2CF24 /* RMCharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA414E2BC848E300B2CF24 /* RMCharacterDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		56FA41402BC83A3A00B2CF24 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		56FA41422BC83A4800B2CF24 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		56FA414B2BC847DF00B2CF24 /* RMCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewController.swift; sourceTree = "<group>"; };
+		56FA414E2BC848E300B2CF24 /* RMCharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,9 +272,18 @@
 		56FA414A2BC847CC00B2CF24 /* RMCharacterDetail */ = {
 			isa = PBXGroup;
 			children = (
+				56FA41502BC84D5400B2CF24 /* View */,
+				56FA414E2BC848E300B2CF24 /* RMCharacterDetailViewModel.swift */,
 				56FA414B2BC847DF00B2CF24 /* RMCharacterDetailViewController.swift */,
 			);
 			path = RMCharacterDetail;
+			sourceTree = "<group>";
+		};
+		56FA41502BC84D5400B2CF24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +368,7 @@
 				56FA41282BC82D5900B2CF24 /* RMOrigin.swift in Sources */,
 				56FA40F52BC828EF00B2CF24 /* RMTabbarController.swift in Sources */,
 				56FA410C2BC82B1000B2CF24 /* RMLocationViewController.swift in Sources */,
+				56FA414F2BC848E300B2CF24 /* RMCharacterDetailViewModel.swift in Sources */,
 				56FA41262BC82D5900B2CF24 /* RMEpisode.swift in Sources */,
 				56FA41092BC82AD800B2CF24 /* RMCharacterViewController.swift in Sources */,
 				56FA412F2BC82DBE00B2CF24 /* RMRequest.swift in Sources */,

@@ -16,6 +16,10 @@
 		56958FBA2C81E1F90076147F /* RickAndMortyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FB92C81E1F90076147F /* RickAndMortyUITests.swift */; };
 		56958FBC2C81E1F90076147F /* RickAndMortyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FBB2C81E1F90076147F /* RickAndMortyUITestsLaunchTests.swift */; };
 		56958FCE2C81E3240076147F /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FCD2C81E3240076147F /* MainTabbarController.swift */; };
+		56958FD32C81E59C0076147F /* RMCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FD22C81E59C0076147F /* RMCharacter.swift */; };
+		56958FD52C81E5A80076147F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FD42C81E5A80076147F /* Response.swift */; };
+		56958FD72C81E5C10076147F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FD62C81E5C10076147F /* Endpoint.swift */; };
+		56958FD92C81E5F60076147F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FD82C81E5F60076147F /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		56958FB92C81E1F90076147F /* RickAndMortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyUITests.swift; sourceTree = "<group>"; };
 		56958FBB2C81E1F90076147F /* RickAndMortyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		56958FCD2C81E3240076147F /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		56958FD22C81E59C0076147F /* RMCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacter.swift; sourceTree = "<group>"; };
+		56958FD42C81E5A80076147F /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		56958FD62C81E5C10076147F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		56958FD82C81E5F60076147F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				56958FC82C81E2090076147F /* Delegates */,
+				56958FD02C81E5610076147F /* Models */,
 				56958FC92C81E2150076147F /* Modules */,
+				56958FCF2C81E55C0076147F /* Services */,
 				56958FCB2C81E2300076147F /* Sources */,
 			);
 			path = RickAndMorty;
@@ -165,6 +175,32 @@
 				56958FCD2C81E3240076147F /* MainTabbarController.swift */,
 			);
 			path = MainTabbar;
+			sourceTree = "<group>";
+		};
+		56958FCF2C81E55C0076147F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				56958FD62C81E5C10076147F /* Endpoint.swift */,
+				56958FD82C81E5F60076147F /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		56958FD02C81E5610076147F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56958FD12C81E58E0076147F /* Character */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		56958FD12C81E58E0076147F /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				56958FD22C81E59C0076147F /* RMCharacter.swift */,
+				56958FD42C81E5A80076147F /* Response.swift */,
+			);
+			path = Character;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,10 +333,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56958FD72C81E5C10076147F /* Endpoint.swift in Sources */,
 				56958F9D2C81E1F80076147F /* CharactersViewController.swift in Sources */,
+				56958FD92C81E5F60076147F /* NetworkManager.swift in Sources */,
 				56958F992C81E1F80076147F /* AppDelegate.swift in Sources */,
 				56958FCE2C81E3240076147F /* MainTabbarController.swift in Sources */,
 				56958F9B2C81E1F80076147F /* SceneDelegate.swift in Sources */,
+				56958FD52C81E5A80076147F /* Response.swift in Sources */,
+				56958FD32C81E59C0076147F /* RMCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,15 @@ final class CharactersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        
+        NetworkManager.shared.request(.getCharacters) { (result: (Result<RMGetAllCharactersResponse, Error>)) in
+            switch result {
+            case .success(let data):
+                print(data)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 
 

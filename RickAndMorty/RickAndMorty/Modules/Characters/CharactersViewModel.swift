@@ -18,7 +18,11 @@ final class CharactersViewModel: CharactersViewModelProtocol {
     private weak var view: CharactersViewControllerProtocol?
     private let service: NetworkManagerProtocol?
     
-    var characters: RMGetAllCharactersResponse?
+    var characters: RMGetAllCharactersResponse? {
+        didSet {
+            view?.collectionViewReloadData()
+        }
+    }
     
     init(view: CharactersViewControllerProtocol?, service: NetworkManagerProtocol) {
         self.service = NetworkManager.shared
@@ -41,6 +45,7 @@ extension CharactersViewModel {
             case .success(let data):
                 DispatchQueue.main.async {
                     self.characters = data
+                    self.view?.prepareCollectionView()
                 }
             case .failure(let error):
                 print(error)

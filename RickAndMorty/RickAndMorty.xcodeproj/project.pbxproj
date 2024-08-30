@@ -24,6 +24,8 @@
 		56958FDD2C81EB5E0076147F /* CharactersBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FDC2C81EB5E0076147F /* CharactersBuilder.swift */; };
 		56958FE02C81EE250076147F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 56958FDF2C81EE250076147F /* SnapKit */; };
 		56958FE22C81EE250076147F /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 56958FE12C81EE250076147F /* SnapKit-Dynamic */; };
+		56958FE52C81EFC80076147F /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FE42C81EFC80076147F /* UIHelper.swift */; };
+		56958FE72C81F0130076147F /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FE62C81F0130076147F /* CharacterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		56958FD82C81E5F60076147F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		56958FDA2C81E6BA0076147F /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		56958FDC2C81EB5E0076147F /* CharactersBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersBuilder.swift; sourceTree = "<group>"; };
+		56958FE42C81EFC80076147F /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		56958FE62C81F0130076147F /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		56958F972C81E1F80076147F /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				56958FE32C81EFBB0076147F /* Helpers */,
 				56958FC82C81E2090076147F /* Delegates */,
 				56958FD02C81E5610076147F /* Models */,
 				56958FC92C81E2150076147F /* Modules */,
@@ -165,6 +170,7 @@
 				56958F9C2C81E1F80076147F /* CharactersViewController.swift */,
 				56958FDA2C81E6BA0076147F /* CharactersViewModel.swift */,
 				56958FDC2C81EB5E0076147F /* CharactersBuilder.swift */,
+				56958FE62C81F0130076147F /* CharacterCell.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -211,6 +217,14 @@
 				56958FD42C81E5A80076147F /* Response.swift */,
 			);
 			path = Character;
+			sourceTree = "<group>";
+		};
+		56958FE32C81EFBB0076147F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				56958FE42C81EFC80076147F /* UIHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +367,8 @@
 				56958FDB2C81E6BA0076147F /* CharactersViewModel.swift in Sources */,
 				56958FD72C81E5C10076147F /* Endpoint.swift in Sources */,
 				56958F9D2C81E1F80076147F /* CharactersViewController.swift in Sources */,
+				56958FE72C81F0130076147F /* CharacterCell.swift in Sources */,
+				56958FE52C81EFC80076147F /* UIHelper.swift in Sources */,
 				56958FDD2C81EB5E0076147F /* CharactersBuilder.swift in Sources */,
 				56958FD92C81E5F60076147F /* NetworkManager.swift in Sources */,
 				56958F992C81E1F80076147F /* AppDelegate.swift in Sources */,

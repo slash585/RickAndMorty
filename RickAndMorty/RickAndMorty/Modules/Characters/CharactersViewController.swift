@@ -92,9 +92,9 @@ extension CharactersViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CharacterCell.reuseID, for: indexPath) as! CharacterCell
-        cell.backgroundColor = .red
+        if let character = viewModel.characters?.results[indexPath.item] {
+            cell.set(character: character)
+        }
         return cell
     }
-    
-    
 }

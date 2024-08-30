@@ -14,8 +14,10 @@ protocol CharactersViewModelProtocol {
 final class CharactersViewModel: CharactersViewModelProtocol {
     
     private weak var view: CharactersViewControllerProtocol?
+    private let service: NetworkManagerProtocol?
     
-    init(view: CharactersViewControllerProtocol?) {
+    init(view: CharactersViewControllerProtocol?, service: NetworkManagerProtocol) {
+        self.service = NetworkManager.shared
         self.view = view
     }
     

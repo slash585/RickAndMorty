@@ -11,8 +11,8 @@ protocol CharactersViewControllerProtocol: AnyObject { }
 
 final class CharactersViewController: UIViewController {
 
-    private lazy var viewModel = CharactersViewModel(view: self)
-    
+    var viewModel: CharactersViewModelProtocol!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.viewDidLoad()

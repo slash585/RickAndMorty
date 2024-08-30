@@ -21,6 +21,7 @@
 		56958FD72C81E5C10076147F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FD62C81E5C10076147F /* Endpoint.swift */; };
 		56958FD92C81E5F60076147F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FD82C81E5F60076147F /* NetworkManager.swift */; };
 		56958FDB2C81E6BA0076147F /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FDA2C81E6BA0076147F /* CharactersViewModel.swift */; };
+		56958FDD2C81EB5E0076147F /* CharactersBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56958FDC2C81EB5E0076147F /* CharactersBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		56958FD62C81E5C10076147F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		56958FD82C81E5F60076147F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		56958FDA2C81E6BA0076147F /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		56958FDC2C81EB5E0076147F /* CharactersBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			children = (
 				56958F9C2C81E1F80076147F /* CharactersViewController.swift */,
 				56958FDA2C81E6BA0076147F /* CharactersViewModel.swift */,
+				56958FDC2C81EB5E0076147F /* CharactersBuilder.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				56958FDB2C81E6BA0076147F /* CharactersViewModel.swift in Sources */,
 				56958FD72C81E5C10076147F /* Endpoint.swift in Sources */,
 				56958F9D2C81E1F80076147F /* CharactersViewController.swift in Sources */,
+				56958FDD2C81EB5E0076147F /* CharactersBuilder.swift in Sources */,
 				56958FD92C81E5F60076147F /* NetworkManager.swift in Sources */,
 				56958F992C81E1F80076147F /* AppDelegate.swift in Sources */,
 				56958FCE2C81E3240076147F /* MainTabbarController.swift in Sources */,

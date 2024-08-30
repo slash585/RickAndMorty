@@ -20,7 +20,7 @@ final class MainTabbarController: UITabBarController {
     }
         
     private func createTabbar(){
-        let charactersVC = CharactersViewController()
+        let charactersVC = CharactersBuilder.make()
         charactersVC.tabBarItem.image = UIImage(named: "Home")
         charactersVC.tabBarItem.selectedImage = UIImage(named: "HomeSelected")
         charactersVC.title = "Characters"
